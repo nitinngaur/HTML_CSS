@@ -1,5 +1,5 @@
 //global vars
-var itemsPerPage = 3;
+var itemsPerPage = 5;
 var startItem = 1;
 var currentPage = 1;
 var endItem = itemsPerPage;

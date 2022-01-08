@@ -25,3 +25,195 @@
     cursor: pointer;
     font-size: 15px;;
 }
+
+/** Product Style**/
+rec-header{
+    width: 98%;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+}
+.rec-product{
+    min-width: 19%;
+    height: 55%;
+    background: whitesmoke;
+    margin:  0 20px  0 0;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    transition: 0.9s;
+
+}
+picture{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+picture img{
+    width: 100%;
+}
+.rec-detail,
+.rec-button{
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    color: #444;
+}
+small{color: #555;}
+a{
+    text-decoration: none;
+    padding: 6px 14px;
+    font-size: 15px;
+    margin: 5px 0 0 20px;
+    display: inline-block;
+    background: #6773ff;
+    color: white;
+}
+.panel-heading{
+    padding: 0 15px;
+        line-height: 0;
+        border-bottom: 1px solid #ececec;
+        margin-bottom: 10px;
+    }
+    .panel-heading a {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        min-height: 100px;
+        margin-top: 1px;
+    }
+    .info-div {
+        margin-left: 21px;
+        line-height: 22px
+    }
+    .headingContainer {
+            min-height: 70px;
+    }
+    .titlediv {
+        overflow: hidden;
+        width: 100%;
+        max-height: 45px;
+        word-break: break-word;
+    }
+    .title {
+        width: 245px;
+        font-weight: 700;
+        font-family: Helvetica;
+        letter-spacing: .1px;
+        text-align: left;
+        display: inline-block;
+        margin-bottom: 0;
+    }
+    .preCatalog {
+        margin-bottom: -.5px;
+        padding-top: 0;
+    }
+    .catalog {
+        font-size: 11px;
+        width: 138px;
+        height: 22px;
+        line-height: 2;
+        color: #54545c
+    }
+    .priceunits {
+        padding-top: 3.5px;
+        clear: both;
+        width: auto;
+        cursor: default!important;
+        font-size: 14px;
+    }
+    .listPrice {
+        height: 22px;
+        font-size: 14px;
+        line-height: 1.57;
+        letter-spacing: .1px;
+        color: #8a8a8a;
+    }
+    .price {
+        font-family: Helvetica;
+        font-size: 18px;
+        height: 22px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-right: 15px;
+        line-height: 1.22;
+        text-align: left;
+        color: #333;
+        display: block;
+        margin-top: 4.9px;
+    }
+    .proSizeSlash {
+        font-size: 16px;
+        font-weight: 400;
+        color: #54545c;
+    }
+    .proSize {
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: 400;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.57;
+        vertical-align: bottom;
+        letter-spacing: .1px;
+        color: #54545c;
+    }
+    .price.onlinePrice {
+        height: auto;
+    }
+    .olPrice {
+        padding-top: 1.6px;
+        margin-bottom: 16.4px;
+        font-size: 14px;
+        font-weight: 500;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.57;
+        letter-spacing: .1px;
+        color: #3bad2f;
+    }
+    .olDate {
+        color: #737373;
+        padding-left: 6px;
+        font-size: 11px;
+    }
+    .addToCartText {
+        width: calc(100% - 40px);
+        min-height: 36px;
+        border-radius: 3px;
+        position: absolute;
+        bottom: 12px;
+        margin: 0 auto;
+        box-sizing: border-box;
+        border: 1px solid #c8c8c8;
+        z-index: 0;
+        background-color: #fff;
+        display: inline-block;
+        background-image: none;
+        padding-top: 6px;
+        padding-bottom: 5px;
+        line-height: 1.57;
+        height: 22px;
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: 700;
+        font-style: normal;
+        letter-spacing: normal;
+        text-align: center;
+        color: #1e8ae7;
+    }
+    
+    
+    
+    
+    
+    
