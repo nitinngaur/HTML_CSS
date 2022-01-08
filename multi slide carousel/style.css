@@ -1,0 +1,27 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+}
+.child {
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: none;
+    text-align: center;
+}
+.child img {
+    height: 200px;
+    width: 100%;
+}
+.back, .next {
+    margin-left: 12px;
+    width: 3%;
+    display: inline-block;
+}
+.back button, .next button {
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 15px;;
+}

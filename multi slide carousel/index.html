@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Multi Slide Carousel</title>
+</head>
+
+<body onload="showProducts()">
+    <header>
+        <h1>Multi Slide Carousel</h1>
+    </header>
+    <div class="parent">
+        <div class="back" onclick="back()"><button>&lt;</button></div>
+
+        <div class="child" id="c1"  data-index="1"   onclick="getDetails(this);"  > slide-1  <img src="https://source.unsplash.com/featured?java" /> </div>
+        <div class="child" id="c2"  data-index="2"   onclick="getDetails(this);"  > slide-2  <img src="https://source.unsplash.com/featured?microsoft" /> </div>
+        <div class="child" id="c3"  data-index="3"   onclick="getDetails(this);"  > slide-3  <img src="https://source.unsplash.com/featured?aws" /> </div>
+        <div class="child" id="c4"  data-index="4"   onclick="getDetails(this);"  > slide-4  <img src="https://source.unsplash.com/featured?azure" /> </div>
+        <div class="child" id="c5"  data-index="5"   onclick="getDetails(this);"  > slide-5  <img src="https://source.unsplash.com/featured?python" /> </div>
+        <div class="child" id="c6"  data-index="6"   onclick="getDetails(this);"  > slide-6  <img src="https://source.unsplash.com/featured?adobe" /> </div>
+        <div class="child" id="c7"  data-index="7"   onclick="getDetails(this);"  > slide-7  <img src="https://source.unsplash.com/featured?oracle" /> </div>
+        <div class="child" id="c8"  data-index="8"   onclick="getDetails(this);"  > slide-8  <img src="https://source.unsplash.com/featured?reactjs" /> </div>
+        <div class="child" id="c9"  data-index="9"   onclick="getDetails(this);"  > slide-9  <img src="https://source.unsplash.com/featured?apple" /> </div>
+        <div class="child" id="c10" data-index="10"  onclick="getDetails(this);"  > slide-10 <img src="https://source.unsplash.com/featured?javascript" /> </div>
+        <div class="child" id="c11" data-index="11"  onclick="getDetails(this);"  > slide-11 <img src="https://source.unsplash.com/featured?html" /> </div>
+        <div class="child" id="c12" data-index="12"  onclick="getDetails(this);"  > slide-12 <img src="https://source.unsplash.com/featured?css" /> </div>
+        
+        <div class="next" onclick="next()"><button>&gt;</button></div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
