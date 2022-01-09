@@ -5,7 +5,7 @@ var currentPage = 1;
 var endItem = itemsPerPage;
 var totalItems = document.getElementsByClassName("child").length;
 var itemsOnLastPage = totalItems % itemsPerPage;
-var totalPages = totalItems / itemsPerPage;
+var totalPages = Math.ceil(totalItems / itemsPerPage);
 var debug = true;
 
 
@@ -24,9 +24,16 @@ function showDebug() {
 
 //show initial slides
 function showProducts() {
+
+    if(endItem >= itemsPerPage && totalPages == 1){
+        endItem = itemsOnLastPage;
+    }
+
     for (i = startItem; i <= endItem; i++) {
         document.getElementById("c" + i).style.display = "inline-block";
     }
+
+    toggleNavButtons();
 }
 
 function hideProductsOnNext() {
@@ -57,7 +64,10 @@ function next() {
         //update currentPage
         currentPage += 1;
 
+        toggleNavButtons();
+
         showDebug();
+
     }
     else return;
 }
@@ -67,7 +77,7 @@ function hideProductsOnBack() {
         document.getElementById("c" + i).style.display = "none";
     }
 
-    if(startItem - itemsPerPage < 0){
+    if(startItem - itemsPerPage <= 0){
         startItem -= itemsOnLastPage;
         endItem -= itemsOnLastPage;
     } else {
@@ -90,6 +100,8 @@ function back() {
         //update currentPage
         currentPage -= 1;
 
+        toggleNavButtons();
+
         showDebug();
     }
     else return;
@@ -98,4 +110,20 @@ function back() {
 function getDetails(obj) {
     console.log('data' , obj.getAttribute('data-index'));
 
+}
+
+function toggleNavButtons() {
+
+    if(totalPages == 1){
+        document.getElementsByClassName("back")[0].style.display = "none";
+        document.getElementsByClassName("next")[0].style.display = "none";
+    }
+
+    if(currentPage == 1) { 
+        document.getElementsByClassName("back")[0].style.display = "none";
+     } else { document.getElementsByClassName("back")[0].style.display = "inline-block"; }
+
+     if(currentPage == totalPages) { 
+        document.getElementsByClassName("next")[0].style.display = "none";
+     } else { document.getElementsByClassName("next")[0].style.display = "inline-block"; }
 }

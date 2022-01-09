@@ -186,31 +186,6 @@ a{
         padding-left: 6px;
         font-size: 11px;
     }
-    .addToCartText {
-        width: calc(100% - 40px);
-        min-height: 36px;
-        border-radius: 3px;
-        position: absolute;
-        bottom: 12px;
-        margin: 0 auto;
-        box-sizing: border-box;
-        border: 1px solid #c8c8c8;
-        z-index: 0;
-        background-color: #fff;
-        display: inline-block;
-        background-image: none;
-        padding-top: 6px;
-        padding-bottom: 5px;
-        line-height: 1.57;
-        height: 22px;
-        font-family: Helvetica;
-        font-size: 14px;
-        font-weight: 700;
-        font-style: normal;
-        letter-spacing: normal;
-        text-align: center;
-        color: #1e8ae7;
-    }
     
     
     
